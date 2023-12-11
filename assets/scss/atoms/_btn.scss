@@ -1,0 +1,18 @@
+.bz-btn{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: $color-white;
+    background-color: $color-blue;
+    border: 1px solid $color-blue;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: $spacer-3 $spacer-4;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: $color-blue;
+        background-color: $color-white;
+    }
+}
