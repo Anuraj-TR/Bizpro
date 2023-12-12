@@ -46,5 +46,12 @@
         &__main{
             font-size: 32px;
         }
+
+        span{
+            &::after{
+                width: 25px;
+                height: 12px;
+            }
+        }
     }
 }
