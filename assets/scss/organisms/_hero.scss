@@ -1,0 +1,106 @@
+.bz-hero{
+   background-color: rgba(236, 249, 255, 1);
+   // background-color: rgb(0, 107, 157);
+   background-position: top right;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-image: url("../images/hero.jpg");
+    padding-top: 150px;
+    padding-bottom: $spacer-6;
+
+   &__content{
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   &__lt{
+      width: 40%;
+   }
+
+   &__rt{
+      flex: 1;
+   }
+
+   &__desc{
+      line-height: 1.5;
+      margin-bottom: 24px;
+   }
+
+   &__actions{
+      display: flex;
+      align-items: center;
+      margin: 0 -16px;
+   }
+
+   &__action{
+      margin: 0 16px;
+   }
+
+   &__play{
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 1);
+      filter: drop-shadow(0px 10px 30px rgba(0, 229, 204, 0.10));
+      border: none;
+   }
+
+   &__testimonial{
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.70);
+      backdrop-filter: blur(5px);
+      max-width: 400px;
+      padding: 24px 24px;
+      margin-top: 42px;
+   }
+
+   &__testimonial-tp{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+   }
+
+   &__testimonial-rating{
+      display: flex;
+      align-items: center;
+
+      .count{
+         font-weight: 500;
+         color: rgba(6, 6, 64, 1);
+         margin-left: 8px;
+      }
+   }
+
+   &__testimonial-word{
+      .username{
+         font-weight: 500;
+      }
+   }
+
+   &__img{
+      transform: translateX(80px);
+      width: 100%;
+   }
+
+}
+
+
+@media (max-width: 1024px){
+   .bz-hero{
+      &__content{
+         flex-direction: column;
+      }
+      &__lt,
+      &__rt{
+         width: 100%;
+      }
+      &__img{
+         transform: translateX(0px);
+         width: 100%;
+      }
+   }
+}
