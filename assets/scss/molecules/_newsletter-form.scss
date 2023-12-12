@@ -1,0 +1,37 @@
+.bz-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-white;
+    padding: $spacer-3 $spacer-2;
+    border-radius: 6px;
+    overflow: hidden;
+
+    &__wrap{
+        width: 100%;
+    }
+
+    &__input,
+    input{
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        color: $color-blue;
+        border: none;
+        padding: $spacer-2;
+        &::placeholder{
+            font-size: 16px;
+            font-weight: 400;
+            color: $color-grey;
+        }
+    }
+
+    &__input-wrap{
+        flex: 1;
+    }
+
+    &__btn-wrap{
+        max-width: 200px;
+    }
+}
