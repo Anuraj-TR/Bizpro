@@ -38,8 +38,12 @@
 
 @include mobile{
     .bz-works{
+        &__header{
+            margin-bottom: $spacer-2;
+        }
         &__tile-wrap{
             flex-direction: column;
+            padding: $spacer-3 $spacer-0;
             margin: 0;
             .bz-work_tile{
                 width: 100%;
