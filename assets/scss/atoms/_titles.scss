@@ -28,3 +28,30 @@
         }
     }
 }
+
+@include tablet{
+    .bz-title{
+        font-size: 36px;
+
+        &__main{
+            font-size: 42px;
+        }
+    }
+}
+
+@include mobile{
+    .bz-title{
+        font-size: 28px;
+
+        &__main{
+            font-size: 32px;
+        }
+
+        span{
+            &::after{
+                width: 25px;
+                height: 12px;
+            }
+        }
+    }
+}

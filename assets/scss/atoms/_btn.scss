@@ -15,4 +15,16 @@
         color: $color-blue;
         background-color: $color-white;
     }
+
+    &--mod{
+        border-color: transparent;
+        background-color: transparent;
+        color: $color-black;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            color: $color-blue;
+            border-color: $color-blue;
+            transition: all 0.3s ease-in-out;
+        }
+    }
 }

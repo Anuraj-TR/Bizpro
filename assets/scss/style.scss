@@ -11,7 +11,15 @@
 @import 'atoms/btn';
 @import 'atoms/titles';
 // molecule
-
+@import 'molecules/how-it-works-tile';
+@import 'molecules/newsletter-form';
+@import 'molecules/package-tile';
 // organisms
-
+@import 'organisms/footer';
+@import 'organisms/header';
+@import 'organisms/how-it-works';
+@import 'organisms/newsletter';
+@import 'organisms/about';
+@import 'organisms/packages';
+@import 'organisms/hero';
 // pages

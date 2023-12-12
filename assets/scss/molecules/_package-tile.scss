@@ -1,0 +1,100 @@
+.bz-package__tile{
+    width: 100%;
+    background-color: $color-white;
+    padding: $spacer-4;
+    border: 1px solid $color-white;
+    border-radius: 14px;
+    overflow: hidden;
+
+    &-top{
+        width: 100%;
+        min-height: 360px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 14px;
+        margin-bottom: $spacer-3;
+        position: relative;
+    }
+
+    &-review{
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        backdrop-filter: blur(15px);
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        padding: $spacer-2;
+
+        .logo{
+            width: 20px;
+            height: 20px;
+            display: flex;
+            margin-right: $spacer-1;
+            svg{
+                width: 100%;
+            }
+        }
+
+        .text{
+            font-size: 14px;
+            font-weight: 500;
+            color: $color-blue;
+        }
+    }
+
+    &-bottom{
+        width: 100%;
+    }
+
+    &-title{
+        font-size: 20px;
+        font-weight: 500;
+        color: $color-black;
+        margin-bottom: $spacer-2;
+    }
+
+    &-price{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-text{
+        font-size: 14px;
+        font-weight: 400;
+        color: $color-grey;
+        margin-left: -24px;
+        &--mod{
+            font-weight: 500;
+            color: $color-green;
+        }
+    }
+
+    &-shibu{
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 1px solid $color-white;
+        overflow: hidden;
+        --left : -15px;
+        &--mod{
+            transform: translateX(var(--left));
+        }
+    }
+
+    &-shibus{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    &-usrs{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
