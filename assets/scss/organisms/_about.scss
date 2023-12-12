@@ -5,9 +5,10 @@
     justify-content: space-between;
     background-color: $color-white;
     padding: $spacer-4 $spacer-0;
-
+    position: relative;
     &-wrap{
         width: 100%;
+        margin: $spacer-3 $spacer-0;
     }
 
     &__cnt{
@@ -22,10 +23,29 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
+        overflow: hidden;
         img{
             width: 100%;
         }
+    }
+
+    .stars,
+    .dec{
+        width: 90px;
+        height: 70px;
+        position: absolute;
+        top: -47px;
+        right: 0;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .dec{
+        top: unset;
+        bottom: -10px;
+        right: -32px;
     }
     
     &__tile{
@@ -85,6 +105,11 @@
 @include mobile-tablet{
     .bz-about{
         flex-direction: column-reverse;
+
+         .stars,
+        .dec{
+                display: none;
+            }
 
         &__right{
             min-height: 400px;
